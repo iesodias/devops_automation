@@ -11,6 +11,7 @@ cd ~/labs/terraform/lab1-resource-group
 
 ## 📄 Passo 1 – Criar o arquivo de provider
 ```bash
+export ARM_SUBSCRIPTION_ID="SUA_SUBSCRIPTION_AQUI"
 vi provider.tf
 ```
 Conteúdo:
