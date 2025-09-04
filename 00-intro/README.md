@@ -34,8 +34,20 @@ sudo docker run hello-world
 
 ### 4. Instale o AWS CLI:
 
+Para instalar o AWS CLI, você precisará baixar o pacote correto para a arquitetura do seu sistema.
+
+**Para sistemas x86_64 (Intel/AMD):**
 ```bash
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+```
+
+**Para sistemas ARM64:**
+```bash
+curl "https://awscli.amazonaws.com/awscli-exe-linux-aarch64.zip" -o "awscliv2.zip"
+```
+
+Após baixar o arquivo correto para sua arquitetura, execute os seguintes comandos para descompactar e instalar:
+```bash
 unzip awscliv2.zip
 sudo ./aws/install
 aws --version
@@ -53,7 +65,7 @@ az version
 ```bash
 curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
 
-echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com noble main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
 
 sudo apt update && sudo apt install terraform -y
 terraform -version
@@ -68,11 +80,31 @@ ansible --version
 
 ### 9. Instale o kubectl e o watch:
 
+Para instalar o kubectl, você precisará baixar o binário correto para a arquitetura do seu sistema. Primeiro, obtenha a versão estável mais recente:
+
 ```bash
-curl -LO "https://dl.k8s.io/release/$(curl -Ls https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+KUBECTL_VERSION=$(curl -Ls https://dl.k8s.io/release/stable.txt)
+echo "Versão estável do kubectl: $KUBECTL_VERSION"
+```
+
+**Para sistemas x86_64 (Intel/AMD):**
+```bash
+curl -LO "https://dl.k8s.io/release/$KUBECTL_VERSION/bin/linux/amd64/kubectl"
+```
+
+**Para sistemas ARM64:**
+```bash
+curl -LO "https://dl.k8s.io/release/$KUBECTL_VERSION/bin/linux/arm64/kubectl"
+```
+
+Após baixar o binário correto para sua arquitetura, execute os seguintes comandos para instalá-lo e verificar a versão:
+```bash
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 kubectl version --client
+```
 
+Para instalar o `watch`:
+```bash
 sudo apt install -y watch
 watch --version
 ```
