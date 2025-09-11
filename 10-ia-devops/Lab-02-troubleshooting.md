@@ -141,7 +141,7 @@ http://IP//swagger-ui/index.html
 kubectl set image deployment/java-api-deployment java-api=iesodias/jav-api:latest
 ```
 
----
+---post mortem
 
 ### 9. Troubleshooting com Gemini CLI
 
