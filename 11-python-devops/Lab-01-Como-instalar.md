@@ -1,17 +1,17 @@
 # Lab 0 — Instalar Python no Ubuntu, criar virtual env e fazer um Hello World
 
-## 🎯 Objetivo
+## Objetivo
 Preparar o ambiente para rodar Python, criar um ambiente virtual e executar o primeiro script "Hello World".
 
 ---
 
-## 🧩 Passo 1 — Conferir a versão do Python
+## Passo 1 — Conferir a versão do Python
 ```bash
 lsb_release -sd             # Mostra a versão do Ubuntu
 python3 --version           # Verifica se o Python 3 já está instalado
 which python3               # Mostra o caminho do Python, se existir
 ```
-✅ **Saída esperada:**
+**Saída esperada:**
 ```
 Ubuntu 22.04 LTS
 Python 3.10.12
@@ -20,7 +20,7 @@ Se o Python não estiver instalado, siga para o próximo passo.
 
 ---
 
-## 🧩 Passo 2 — Instalar Python 3, pip e venv
+## Passo 2 — Instalar Python 3, pip e venv
 ```bash
 sudo apt update
 sudo apt install -y python3 python3-venv python3-pip
@@ -35,22 +35,22 @@ pip --version
 
 ---
 
-## 🧩 Passo 3 — Criar pasta do projeto
+## Passo 3 — Criar pasta do projeto
 ```bash
 mkdir -p ~/labs/python-hello
 cd ~/labs/python-hello
 pwd
 ```
-📌 **Dica:** mantenha uma pasta dedicada para seus labs.
+**Dica:** mantenha uma pasta dedicada para seus labs.
 
 ---
 
-## 🧩 Passo 4 — Criar e ativar o virtual env
+## Passo 4 — Criar e ativar o virtual env
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
-✅ **Saída esperada:**
+**Saída esperada:**
 ```
 (.venv) usuario@ubuntu:~/labs/python-hello$
 ```
@@ -63,7 +63,7 @@ pip -V
 
 ---
 
-## 🧩 Passo 5 — Criar o arquivo "Hello World"
+## Passo 5 — Criar o arquivo "Hello World"
 Crie o arquivo usando o comando `touch`:
 ```bash
 touch main.py
@@ -84,14 +84,14 @@ Execute o script:
 ```bash
 python main.py
 ```
-✅ **Saída esperada:**
+**Saída esperada:**
 ```
 Hello, DevOps!
 ```
 
 ---
 
-## 🧩 Passo 6 — Testar o REPL (interpretador)
+## Passo 6 — Testar o REPL (interpretador)
 ```bash
 python
 ```
@@ -103,7 +103,7 @@ exit()
 
 ---
 
-## 🧩 Passo 7 — Checkpoint do ambiente
+## Passo 7 — Checkpoint do ambiente
 ```bash
 python - << 'PY'
 import sys, platform
@@ -111,7 +111,7 @@ print("Python:", sys.version.split()[0])
 print("SO:", platform.system(), platform.release())
 PY
 ```
-✅ **Saída esperada:**
+**Saída esperada:**
 ```
 Python: 3.10.12
 SO: Linux 5.15.0
@@ -119,25 +119,25 @@ SO: Linux 5.15.0
 
 ---
 
-## 🧩 Passo 8 — Desativar o virtual env
+## Passo 8 — Desativar o virtual env
 ```bash
 deactivate
 ```
-📌 **Dica:** o comando `deactivate` volta ao Python global.
+**Dica:** o comando `deactivate` volta ao Python global.
 
 ---
 
-## 🛠 Problemas comuns e soluções
+## Problemas comuns e soluções
 - **Erro:** `source .venv/bin/activate: No such file or directory`
-  - 🔹 Solução: recrie o venv com `python3 -m venv .venv`
+  - Solução: recrie o venv com `python3 -m venv .venv`
 - **Erro:** `python: command not found`
-  - 🔹 Solução: instale o alias com `sudo apt install python-is-python3`
+  - Solução: instale o alias com `sudo apt install python-is-python3`
 - **Erro de permissão ao instalar pacotes**
-  - 🔹 Solução: ative o venv e instale dentro dele
+  - Solução: ative o venv e instale dentro dele
 
 ---
 
-## 🚀 O que você aprendeu
+## O que você aprendeu
 - Instalar e configurar Python 3
 - Criar e ativar um ambiente virtual
 - Criar um arquivo manualmente e rodar seu primeiro script
@@ -145,4 +145,4 @@ deactivate
 
 ---
 
-Pronto! Agora temos o ambiente Python preparado para os próximos labs 😎
+Pronto! Agora temos o ambiente Python preparado para os próximos labs

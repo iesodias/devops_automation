@@ -1,25 +1,25 @@
 # Lab 1 — Fundamentos do Python para DevOps
 
-## 🎯 Objetivo
+## Objetivo
 Aprender os conceitos básicos de Python direto no **interpretador** e em pequenos scripts. Vamos trabalhar com variáveis, tipos, formatação de texto, condicionais, imports, tratamento de erros e um mini-desafio.
 
 ---
 
-## 🧩 Passo 1 — Preparar o ambiente
+## Passo 1 — Preparar o ambiente
 ```bash
 mkdir -p ~/labs/python-basics
 cd ~/labs/python-basics
 python3 -m venv .venv
 source .venv/bin/activate
 ```
-✅ **Saída esperada:**
+**Saída esperada:**
 ```
 (.venv) user@ubuntu:~/labs/python-basics$
 ```
 
 ---
 
-## 🧩 Passo 2 — Variáveis, tipos e f-strings
+## Passo 2 — Variáveis, tipos e f-strings
 Abra o interpretador:
 ```bash
 python
@@ -54,7 +54,7 @@ exit()
 
 ---
 
-## 🧩 Passo 3 — Condicionais práticas
+## Passo 3 — Condicionais práticas
 Crie um arquivo chamado `conditionals.py`:
 ```bash
 touch conditionals.py
@@ -86,7 +86,7 @@ python conditionals.py
 
 ---
 
-## 🧩 Passo 4 — Imports úteis para DevOps
+## Passo 4 — Imports úteis para DevOps
 Crie um arquivo chamado `imports.py`:
 ```bash
 touch imports.py
@@ -107,7 +107,7 @@ python imports.py
 
 ---
 
-## 🧩 Passo 5 — Tratando erros com try/except
+## Passo 5 — Tratando erros com try/except
 Crie um arquivo chamado `errors.py`:
 ```bash
 touch errors.py
@@ -148,7 +148,7 @@ python errors.py
 
 ---
 
-## 🧩 Passo 6 — Mini-desafio integrando tudo
+## Passo 6 — Mini-desafio integrando tudo
 Crie um arquivo chamado `challenge.py`:
 ```bash
 touch challenge.py
@@ -186,13 +186,13 @@ Execute:
 ```bash
 python challenge.py
 ```
-✅ **Teste com diferentes entradas:**
+**Teste com diferentes entradas:**
 - **Entrada válida:** `85` → Status: **HIGH**
 - **Entrada inválida:** `abc` → **Invalid input**
 
 ---
 
-## 🚀 O que você aprendeu
+## O que você aprendeu
 - Criar diretórios e organizar arquivos
 - Trabalhar com variáveis, tipos e f-strings
 - Escrever condicionais e operadores lógicos
