@@ -1,4 +1,4 @@
-# Lab 0 — Instalar Python no Ubuntu, criar virtual env e fazer um Hello World
+# Lab-01 — Instalar Python no Ubuntu, criar virtual env e fazer um Hello World
 
 ## Objetivo
 Preparar o ambiente para rodar Python, criar um ambiente virtual e executar o primeiro script "Hello World".

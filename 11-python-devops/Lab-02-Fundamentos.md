@@ -1,4 +1,4 @@
-# Lab 1 — Fundamentos do Python para DevOps
+# Lab-02 — Fundamentos do Python para DevOps
 
 ## Objetivo
 Aprender os conceitos básicos de Python direto no **interpretador** e em pequenos scripts. Vamos trabalhar com variáveis, tipos, formatação de texto, condicionais, imports, tratamento de erros e um mini-desafio.
