@@ -62,7 +62,7 @@ az group show --name terraform-demo-rg --output table
 
 ```bash
 az resource list --resource-group terraform-demo-rg --output table
-```c
+```
 
 * Mostra os recursos dentro do grupo `terraform-demo-rg`.
 * Se não houver recursos ainda, o retorno será uma lista vazia.
