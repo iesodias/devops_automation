@@ -262,16 +262,6 @@ Na próxima parte, vamos explorar comandos de rede como `ping`, `ssh`, `scp`, `c
 
 Vamos nessa! 🌐
 
-[...]
-
-## ✅ Conclusão da Parte 3
-
-Você agora domina os principais comandos para obter informações do sistema, gerenciar processos, checar uso de recursos e controlar o desligamento. Tudo isso faz parte da rotina de administração no Linux.
-
-Na próxima parte, vamos explorar comandos de rede como `ping`, `ssh`, `scp`, `curl` e outros.
-
-Vamos nessa! 🌐
-
 ---
 
 ## 🌐 Parte 4 – Comandos de Rede (Passo a Passo)
