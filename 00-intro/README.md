@@ -1,4 +1,4 @@
-# Pré-requisitos para o Lab DevOps Automation
+# Pré-requisitos para o Lab DevOps Automation.
 
 Este documento lista os pré-requisitos necessários para acompanhar todos os módulos do curso DevOps Automation. Escolha seu sistema operacional e siga o passo a passo correspondente para garantir que seu ambiente está pronto.
 
